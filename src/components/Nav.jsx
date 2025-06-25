@@ -5,15 +5,15 @@ import { cn } from "@/lib/utils";
 
 export function Nav() {
   return (
-    <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+    <div className="relative w-full flex items-center justify-center ">
+      <Navbar className="top-2 dark" />
       <p className="text-black dark:text-white">
-        The Navbar will show on top of the page
+        
       </p>
     </div>
   );
 }
-
+9
 function Navbar({
   className
 }) {
@@ -22,6 +22,7 @@ function Navbar({
     <div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
+        <HoveredLink href="#education">About</HoveredLink>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -30,38 +31,38 @@ function Navbar({
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
+        <MenuItem setActive={setActive} active={active} item="Projects">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="Algochurn"
+              title="Chat App"
               href="https://algochurn.com"
               src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before." />
+              description="MERN stack based live chat app using socket" />
             <ProductItem
-              title="Tailwind Master Kit"
+              title="Series Exam Managment System"
               href="https://tailwindmasterkit.com"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project" />
+              description="A web app for centralized series exam management and scrutiny of questioin paper using vanila HTML,CSS and JS" />
             <ProductItem
-              title="Moonbeam"
+              title="Master Chef"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes." />
+              description="React web app that generate recipy based on the given increadence,Integrated with hugface ai API" />
             <ProductItem
-              title="Rogue"
+              title="Tenzies"
               href="https://userogue.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI" />
+              description="React frontend project. A game of Dies" />
+              <ProductItem
+              title="Youtube Clone"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="A clone using vanila HTML and CSS " />
+              
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        
+            <HoveredLink href="#education">Education</HoveredLink>
       </Menu>
     </div>
   );
