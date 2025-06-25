@@ -38,11 +38,11 @@ export const MenuItem = ({
                 transition={transition}
                 // layoutId ensures smooth animation
                 layoutId="active"
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl">
+                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl ">
                 <motion.div
                   // layout ensures smooth animation
                   layout
-                  className="w-max h-full p-4">
+                  className="w-max h-full  p-4">
                   {children}
                 </motion.div>
               </motion.div>
@@ -62,7 +62,7 @@ export const Menu = ({
     <nav
       // resets the state
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 ">
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 max-sm:h-[50px] max-sm:py-3 ">
       {children}
     </nav>
   );

@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
-export function Nav() {
+export function   Nav() {
   return (
-    <div className="relative w-full flex items-center justify-center ">
+    <div className="relative w-full flex items-center justify-center">
       <Navbar className="top-2 dark" />
       <p className="text-black dark:text-white">
         
@@ -22,7 +22,7 @@ function Navbar({
     <div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
-        <HoveredLink href="#education">About</HoveredLink>
+        <HoveredLink href="#about">About</HoveredLink>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -31,8 +31,9 @@ function Navbar({
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Projects">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+        <MenuItem setActive={setActive} active={active} item="Projects" className="" href="#projects">
+          <div className="  text-sm grid grid-cols-2 gap-10 p-4 max-sm:grid-cols-1 overflow-auto max-sm:h-[280px] max-sm:w-[400px] ">
+            
             <ProductItem
               title="Chat App"
               href="https://algochurn.com"

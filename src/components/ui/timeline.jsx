@@ -32,10 +32,10 @@ export const Timeline = ({
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
           EDUCATION
         </h2>
-        <p
+        {/* <p
           className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
           Here is my education from Highschool up to Now
-        </p>
+        </p> */}
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (

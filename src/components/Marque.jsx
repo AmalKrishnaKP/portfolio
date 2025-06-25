@@ -38,7 +38,7 @@ export default function Marque() {
   ];
   return (
     <div
-      className="relative px-0 my-10 flex  w-full max-w-7xl flex-col  justify-center overflow-hidden rounded-3xl max-sm:h-100 dark">
+      className="relative px-0 my-10 flex  w-full max-w-7xl flex-col  justify-center overflow-hidden rounded-3xl max-sm:h-100 dark" id="about">
       <Profile />
       {/* overlay */}
       <div

@@ -4,10 +4,12 @@ import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 const Profile = () => {
     
   return (
-    <div className="flex flex-col pl-15 justify-center h-[40rem] z-20 ">
+    <div className="flex flex-col max-sm:pl-5 pl-15 justify-center h-[40rem] z-20 max-sm:text-sm">
       <TypingAnimation 
-      delay={100}>
-        Hello i am AmalKrishna KP
+      delay={100}
+      className="text-3xl"
+      >
+        Hello,I am AmalKrishna KP
       </TypingAnimation>
       <ContainerTextFlip
       words={["Student","Coder","MERN Developer "]}
