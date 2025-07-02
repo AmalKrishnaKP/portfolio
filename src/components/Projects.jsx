@@ -5,6 +5,7 @@ const Projects = () => {
     const allprojects=projectObj.map((item,index)=>(
       <ItemProject
       key={index}
+                id={item.id}
                 title={item.title}
                 img={item.img}
                 discription={item.discription}

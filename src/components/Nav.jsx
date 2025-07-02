@@ -39,23 +39,23 @@ function Navbar({
             
               title="Chat App"
               
-              href="https://algochurn.com"
+              href="#chatter"
               src="/chat1.png"
               description="MERN stack based live chat app using socket" />
             <ProductItem
               title="Series Exam Managment System"
               href="https://tailwindmasterkit.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              src="/lib.jpg"
               description="A web app for centralized series exam management and scrutiny of questioin paper using vanila HTML,CSS and JS" />
             <ProductItem
               title="Master Chef"
-              href="https://gomoonbeam.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+              href="#masterChef "
+              src="/chef.png"
               description="React web app that generate recipy based on the given increadence,Integrated with hugface ai API" />
             <ProductItem
               title="Tenzies"
-              href="https://userogue.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              href="#tenzies"
+              src="/tenzies.png"
               description="React frontend project. A game of Dies" />
               <ProductItem
               title="Youtube Clone"

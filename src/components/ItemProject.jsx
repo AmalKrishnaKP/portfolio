@@ -4,7 +4,7 @@ const ItemProject = (props) => {
     const Ref1=useRef(null)
     const Ref2=useRef(null)
   return (
-    <div className='pt-3'>
+    <div className='pt-3 px-2' id={props.id}>
         <h2 className='text-2xl font-medium pb-5 pl-5 max-sm:pl-10'>{props.title}</h2>
         <div className='flex flex-row justify-between max-sm:flex-col max-sm:items-center'>
 
