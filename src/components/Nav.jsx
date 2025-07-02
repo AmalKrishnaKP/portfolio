@@ -35,9 +35,12 @@ function Navbar({
           <div className="  text-sm grid grid-cols-2 gap-10 p-4 max-sm:grid-cols-1 overflow-auto max-sm:h-[280px] max-sm:w-[400px] ">
             
             <ProductItem
+            
+            
               title="Chat App"
+              
               href="https://algochurn.com"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
+              src="/chat1.png"
               description="MERN stack based live chat app using socket" />
             <ProductItem
               title="Series Exam Managment System"

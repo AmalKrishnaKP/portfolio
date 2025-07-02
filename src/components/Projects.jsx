@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <div className='bg-[#0a0a0a] rounded-2xl mt-[50px] p-10 ' id='projects'>
         projects
-        <div className='px-20'>
+        <div className='px-20 max-sm:px-5' >
             {allprojects}
         </div>
     </div>

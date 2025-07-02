@@ -9,7 +9,7 @@ export  const projectObj=[
     },
     {   
         title:"Master Chef",
-        img:"src/assets/chef.png",
+        img:"/chef.png",
         discription:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus architecto repellat distinctio minima optio aut cupiditate in, expedita eaque possimus numquam! Nesciunt corporis necessitatibus reiciendis nostrum aspernatur minima maiores cumque pariatur? Distinctio aperiam at voluptatem eum veritatis fuga facilis labore harum tempore beatae vel est officia, repudiandae magni ratione ipsum ",
         github:"https://github.com/AmalKrishnaKP/Master-Chef",
         diploy:"https://master-chef-one.vercel.app/"
@@ -17,7 +17,7 @@ export  const projectObj=[
     },
     {
         title:"Tenzies",
-        img:"src/assets/tenzies.png",
+        img:"/tenzies.png",
         discription:"A simple react app ,in which we can find the same number to win the game",
         github:"https://github.com/AmalKrishnaKP/Tenzies",
         diploy:"https://tenzies-tau-ten.vercel.app/"
@@ -25,7 +25,7 @@ export  const projectObj=[
     },
     {
         title:"Meme Genrator",
-        img:"src/assets/meme.png",
+        img:"/meme.png",
         discription:"A react web which can be used to generate random image and user can add text to generate meme",
         github:"https://github.com/AmalKrishnaKP/meme-generator",
         diploy:""
