@@ -1,7 +1,7 @@
 export  const projectObj=[
     {   
         title:"My  Chatter",
-        img:"public/chat1.png",
+        img:"../src/assets/chat1.png",
         discription:`A MERN stack web app which provide real time chat using socket io ,also include features like theam changing profile eddition etc`,
         github:"https://github.com/AmalKrishnaKP/live_chat_app",
         diploy:"https://live-chat-app-qfj3.onrender.com/"
