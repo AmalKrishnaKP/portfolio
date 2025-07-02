@@ -12,7 +12,7 @@ const ItemProject = (props) => {
                 <img src={props.img} alt="img" className='h-[20vw] max-sm:h-50 object-fill rounded-3xl  '/>
             </div>
             <div className='flex flex-col justify-evenly items-center max-sm:pt-5 '>
-                <p className='w-[40vw] max-sm:w-100 max-sm:text-center '>{props.discription}</p>
+                <p className='w-[40vw] max-sm:w-90 max-sm:text-center '>{props.discription}</p>
                 <div className='flex flex-row justify-evenly w-full max-sm:pt-5'>
                     {props.github!=""?
                     <button 
