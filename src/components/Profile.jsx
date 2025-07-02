@@ -1,6 +1,5 @@
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
-
 const Profile = () => {
     
   return (
