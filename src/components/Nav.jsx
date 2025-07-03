@@ -23,14 +23,15 @@ function Navbar({
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <HoveredLink href="#about">About</HoveredLink>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        {/* <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
             <HoveredLink href="/interface-design">Interface Design</HoveredLink>
             <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
+        <HoveredLink href="#about">Skills</HoveredLink>
         <MenuItem setActive={setActive} active={active} item="Projects" className="" href="#projects">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4 max-sm:grid-cols-1 overflow-auto max-sm:h-[280px] max-sm:w-[400px] ">
             

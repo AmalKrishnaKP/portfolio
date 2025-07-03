@@ -3,6 +3,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import Education from './Education';
 import Marque from './Marque'
 import Projects from './Projects';
+import Skills from './Skills';
 const Body = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Body = () => {
             <Marque />
             <Education />
             <Projects />
+            <Skills />
         </TracingBeam>
     </div>
   )
