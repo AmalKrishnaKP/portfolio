@@ -18,7 +18,7 @@ export const Timeline = ({
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 10%", "end 500%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -28,8 +28,8 @@ export const Timeline = ({
     <div
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10 max-sm:pb-0 max-sm:pt-10">
+        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl  font-bold">
           EDUCATION
         </h2>
         {/* <p
@@ -55,7 +55,7 @@ export const Timeline = ({
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
               <h3
-                className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                className="md:hidden block text-2xl max-sm:text-xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
               {item.content}{" "}

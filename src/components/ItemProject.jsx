@@ -16,7 +16,7 @@ const ItemProject = (props) => {
                 <div className='flex flex-row justify-evenly w-full max-sm:pt-5'>
                     {props.github!=""?
                     <button 
-                        className='py-4 px-8 bg-white text-black font-medium rounded-2xl hover:bg-gray-700 hover:cursor-pointer'>
+                        className='py-4 px-8  font-medium rounded-2xl border shadow-white shadow-md  hover:bg-gray-700 hover:cursor-pointer'>
                         <a 
                             href={props.github}
                             ref={Ref1}>GitHub repo
@@ -24,7 +24,7 @@ const ItemProject = (props) => {
                     </button>:""}
                     {props.deploy!=""?
                     <button 
-                        className='py-4 px-8 bg-white text-black font-medium rounded-2xl hover:bg-gray-700 hover:cursor-pointer'> 
+                        className='py-4 px-8 font-medium rounded-2xl hover:bg-gray-700 border shadow-white shadow-md  hover:cursor-pointer'> 
                         <a href={props.diploy}
                         ref={Ref2}>Live Demo</a></button>:""}
                     
