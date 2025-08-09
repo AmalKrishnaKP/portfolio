@@ -32,8 +32,8 @@ function Navbar({
           </div>
         </MenuItem> */}
         <HoveredLink href="#about">Skills</HoveredLink>
-        <MenuItem setActive={setActive} active={active} item="Projects" className="" href="#projects">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4 max-sm:grid-cols-1 overflow-auto max-sm:h-[280px] max-sm:w-[400px] ">
+        <MenuItem setActive={setActive} active={active} item="Projects" className="pb-1" >
+          <div className="  text-sm grid grid-cols-2 gap-5 p-4 max-sm:grid-cols-1 overflow-auto max-sm:h-[280px] max-sm:w-[400px] ">
             
             <ProductItem
             

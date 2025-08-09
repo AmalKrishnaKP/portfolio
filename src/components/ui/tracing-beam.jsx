@@ -34,8 +34,8 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative mx-auto h-full w-full max-w-7xl", className)}>
-      <div className="absolute top-1 -left-1 md:-left-20">
+      className={cn("relative mx-auto h-full w-full max-w-7xl ", className)}>
+      <div className="absolute top-1 -left-1 md:-left-20 max-sm:pl-0.5">
         <motion.div
           transition={{
             duration: 0.2,
@@ -57,7 +57,7 @@ export const TracingBeam = ({
               backgroundColor: scrollYProgress.get() > 0 ? "white" : "#10b981",
               borderColor: scrollYProgress.get() > 0 ? "white" : "#059669",
             }}
-            className="h-2 w-2 rounded-full border border-neutral-300 bg-white" />
+            className="h-2 w-2 rounded-full border border-neutral-300 bg-white " />
         </motion.div>
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
@@ -79,7 +79,7 @@ export const TracingBeam = ({
             fill="none"
             stroke="url(#gradient)"
             strokeWidth="1.25"
-            className="motion-reduce:hidden"
+            className="motion-reduce:hidden "
             transition={{
               duration: 10,
             }}></motion.path>

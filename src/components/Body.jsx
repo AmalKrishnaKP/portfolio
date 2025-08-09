@@ -8,7 +8,7 @@ import Skills from './Skills';
 import Profile from './Profile';
 const Body = () => {
   return (
-    <div >
+    <div className='px-5'>
 
 
         <TracingBeam>

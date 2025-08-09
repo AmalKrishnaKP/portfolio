@@ -48,8 +48,8 @@ const Education = () => {
         },
     ]
     return (
-    <section id="education ">
-        <div className="relative w-full overflow-clip dark rounded-3xl">
+    <section id="education " className="z-40">
+        <div className="relative w-full overflow-clip dark rounded-3xl ">
         <Timeline  data={data} />
         </div>
     </section>

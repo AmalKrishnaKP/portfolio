@@ -16,7 +16,9 @@ const Projects = () => {
     ))
   return (
     <div className='bg-[#0a0a0a] rounded-2xl mt-[50px] p-10 ' id='projects'>
-        projects
+        <h2 className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl  font-bold pl-10">
+          PROJECTS
+        </h2>
         <div className='px-20 max-sm:px-5' >
             {allprojects}
         </div>
