@@ -6,17 +6,16 @@ import Education from './Education';
 import Projects from './Projects';
 import Skills from './Skills';
 import Profile from './Profile';
+
 const Body = () => {
   return (
-    <div className='px-5'>
+    <div className='px-2 pt-10 sm:px-4 md:px-5 lg:px-8 box-sizing: border-box' role="main">
 
-
-        <TracingBeam>
             <Profile />
             <Education />
             <Projects />
             <Skills />
-        </TracingBeam>
+        
     </div>
   )
 }

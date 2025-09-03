@@ -120,4 +120,128 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Enhanced responsive utilities */
+  .container-responsive {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Smooth scrolling for better mobile experience */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Better touch targets for mobile */
+  button, a {
+    @apply touch-manipulation;
+  }
+  
+  /* Improved text rendering */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Better focus states for accessibility */
+  button:focus, a:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-background;
+  }
+  
+  /* Responsive image handling */
+  img {
+    @apply max-w-full h-auto;
+  }
+  
+  /* Better mobile navigation spacing */
+  @media (max-width: 640px) {
+    .mobile-nav-spacing {
+      @apply px-4 py-2;
+    }
+  }
+  
+  /* Improved mobile button sizing */
+  @media (max-width: 640px) {
+    button {
+      @apply min-h-[44px] min-w-[44px];
+    }
+  }
+  
+  /* Enhanced accessibility utilities */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* Better color contrast for accessibility */
+  .text-high-contrast {
+    color: oklch(0.1 0 0);
+  }
+  
+  .dark .text-high-contrast {
+    color: oklch(0.95 0 0);
+  }
+  
+  /* Smooth page transitions */
+  .page-transition {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Loading animations */
+  .loading-skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+  
+  .dark .loading-skeleton {
+    background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+    background-size: 200% 100%;
+  }
+  
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .border {
+      border-width: 2px;
+    }
+    
+    button, a {
+      border: 2px solid currentColor;
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
