@@ -1,39 +1,33 @@
 import React from 'react'
 import { BoxReveal } from "@/components/magicui/box-reveal";
-
+import { skillCategories,skillImages } from '../constance/skill';
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      skills: ["React.js", "HTML5", "CSS3", "JavaScript (ES6+)", "Tailwind CSS", "Responsive Design"]
-    },
-    {
-      title: "Backend Development", 
-      skills: ["Node.js", "Express.js", "RESTful APIs", "MongoDB", "Mongoose", "JWT Authentication"]
-    },
-    {
-      title: "Database Management",
-      skills: ["MongoDB", "MongoDB Atlas", "Database Design", "Data Modeling", "CRUD Operations"]
-    },
-    {
-      title: "DevOps & Tools",
-      skills: ["Git & GitHub", "VS Code", "Postman", "Heroku", "Vercel", "npm/yarn"]
-    }
-  ];
+  // Skill images mapping - you can replace these with actual skill images
+ 
 
   return (
-    <section className="px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16" aria-labelledby="skills-heading">
+    <section className="relative px-2 sm:px- md:px-0 my-6 sm:my-8 md:my-10 flex w-full max-w-7xl flex-col justify-center overflow-hidden rounded-2xl sm:rounded-3xl dark border-2 shadow-2xl max-sm:px-4" aria-labelledby="skills-heading">
         <h2 id="skills-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">Skills & Technologies</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
             {skillCategories.map((category, index) => (
               <BoxReveal key={index}>
-                <div className="p-4 text-center" role="region" aria-labelledby={`skill-category-${index}`}>
+                <div className="p-4 text-center flex flex-col items-center" role="region" aria-labelledby={`skill-category-${index}`}>
                   <h3 id={`skill-category-${index}`} className="text-lg font-semibold mb-3">{category.title}</h3>
-                  <ul className="text-sm space-y-1" role="list">
+                  <div className="flex flex-wrap justify-center gap-2" role="list">
                     {category.skills.map((skill, skillIndex) => (
-                      <li key={skillIndex} role="listitem">{skill}</li>
+                      <div key={skillIndex} className="flex flex-col items-center p-3 rounded-lg  hover:text-black hover:bg-gray-100 transition-colors" role="listitem">
+                        <img 
+                          src={skillImages[skill] || "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/code/code-original.svg"} 
+                          alt={skill}
+                          className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                          onError={(e) => {
+                            e.target.src = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/code/code-original.svg";
+                          }}
+                        />
+                        <span className="text-xs mt-1 text-center max-w-20 break-words font-medium">{skill}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               </BoxReveal>
             ))}

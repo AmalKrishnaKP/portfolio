@@ -5,6 +5,7 @@ import BackToTop from "./components/BackToTop";
 import SkipToContent from "./components/SkipToContent";
 import ThemeToggle from "./components/ThemeToggle";
 import Loading from "./components/Loading";
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,12 +26,13 @@ function App() {
   return (
     <div data-theme="dark" className="w-full h-full min-h-screen">
       <SkipToContent />
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Nav />
       <main id="main-content" tabIndex="-1">
         <Body />
       </main>
       <BackToTop />
+      <Footer />
     </div>
   );
 }
