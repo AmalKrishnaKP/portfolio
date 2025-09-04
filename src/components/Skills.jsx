@@ -6,7 +6,7 @@ const Skills = () => {
  
 
   return (
-    <section className="relative px-2 sm:px- md:px-0 my-6 sm:my-8 md:my-10 flex w-full max-w-7xl flex-col justify-center overflow-hidden rounded-2xl sm:rounded-3xl dark border-2 shadow-2xl max-sm:px-4" aria-labelledby="skills-heading">
+    <section id='skills' className="relative px-2 sm:px- md:px-0 my-6 sm:my-8 md:my-10 flex w-full max-w-7xl flex-col justify-center overflow-hidden rounded-2xl sm:rounded-3xl dark border-2 shadow-2xl max-sm:px-4" aria-labelledby="skills-heading">
         <h2 id="skills-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">Skills & Technologies</h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
             {skillCategories.map((category, index) => (

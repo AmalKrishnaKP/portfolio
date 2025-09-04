@@ -1,55 +1,35 @@
-export  const projectObj=[
+export const projectObj = [
     {   
-        id:"chatter",
-        title:"My  Chatter",
-        img:"/chat1.png",
-        discription:`A MERN stack web app which provide real time chat using socket io ,also include features like theam changing profile eddition etc`,
-        github:"https://github.com/AmalKrishnaKP/live_chat_app",
-        diploy:"https://live-chat-app-qfj3.onrender.com/"
-
+      id: "chatter",
+      title: "My Chatter",
+      img: "/chat1.png",
+      discription: `A full-stack MERN web application enabling real-time chat, file sharing, theme customization, and profile management.`,
+      github: "https://github.com/AmalKrishnaKP/live_chat_app",
+      diploy: "https://live-chat-app-qfj3.onrender.com/"
     },
     {   
-        id:"masterChef",
-        title:"Master Chef",
-        img:"/chef.png",
-        discription:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus architecto repellat distinctio minima optio aut cupiditate in, expedita eaque possimus numquam! Nesciunt corporis necessitatibus reiciendis nostrum aspernatur minima maiores cumque pariatur? Distinctio aperiam at voluptatem eum veritatis fuga facilis labore harum tempore beatae vel est officia, repudiandae magni ratione ipsum ",
-        github:"https://github.com/AmalKrishnaKP/Master-Chef",
-        diploy:"https://master-chef-one.vercel.app/"
-
+      id: "masterChef",
+      title: "Master Chef",
+      img: "/chef.png",
+      discription: "An AI-powered React web application that generates personalized recipes based on user-provided ingredients.",
+      github: "https://github.com/AmalKrishnaKP/Master-Chef",
+      diploy: "https://master-chef-one.vercel.app/"
     },
     {
-        id:"tenzies",
-        title:"Tenzies",
-        img:"/tenzies.png",
-        discription:"A simple react app ,in which we can find the same number to win the game",
-        github:"https://github.com/AmalKrishnaKP/Tenzies",
-        diploy:"https://tenzies-tau-ten.vercel.app/"
-
+      id: "tenzies",
+      title: "Tenzies",
+      img: "/tenzies.png",
+      discription: "An interactive React-based game where players roll dice and match numbers to achieve victory.",
+      github: "https://github.com/AmalKrishnaKP/Tenzies",
+      diploy: "https://tenzies-tau-ten.vercel.app/"
     },
     {
-
-        id:"memeGen",
-        title:"Meme Genrator",
-        img:"/meme.png",
-        discription:"A react web which can be used to generate random image and user can add text to generate meme",
-        github:"https://github.com/AmalKrishnaKP/meme-generator",
-        diploy:""
-
-    },
-    // {
-    //     title:"",
-    //     img:"",
-    //     discription:"",
-    //     github:"",
-    //     diploy:""
-
-    // },
-    // {
-    //     title:"",
-    //     img:"",
-    //     discription:"",
-    //     github:"",
-    //     diploy:""
-
-    // },
-]
+      id: "memeGen",
+      title: "Meme Generator",
+      img: "/meme.png",
+      discription: "A React application that allows users to generate random images and add custom text to create memes.",
+      github: "https://github.com/AmalKrishnaKP/meme-generator",
+      diploy: ""
+    }
+  ]
+  
