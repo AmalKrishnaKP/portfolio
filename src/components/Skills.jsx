@@ -7,7 +7,7 @@ const Skills = () => {
 
   return (
     <section id='skills' className="relative px-2 sm:px- md:px-0 my-6 sm:my-8 md:my-10 flex w-full max-w-7xl flex-col justify-center overflow-hidden rounded-2xl sm:rounded-3xl dark border-2 shadow-2xl max-sm:px-4" aria-labelledby="skills-heading">
-        <h2 id="skills-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">Skills & Technologies</h2>
+        <h2 id="skills-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold  text-black text-center mb-8 sm:mb-12 pt-2">Skills & Technologies</h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
             {skillCategories.map((category, index) => (
               <BoxReveal key={index}>
@@ -15,7 +15,7 @@ const Skills = () => {
                   <h3 id={`skill-category-${index}`} className="text-lg font-semibold mb-3">{category.title}</h3>
                   <div className="flex flex-wrap justify-center gap-2" role="list">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex flex-col items-center p-3 rounded-lg  hover:text-black hover:bg-gray-100 transition-colors" role="listitem">
+                      <div key={skillIndex} className="flex flex-col items-center p-3 rounded-lg  hover:text-white hover:bg-gray-500 transition-colors" role="listitem">
                         <img 
                           src={skillImages[skill] || "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/code/code-original.svg"} 
                           alt={skill}

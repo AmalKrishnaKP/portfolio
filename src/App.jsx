@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div data-theme="dark" className="w-full h-full min-h-screen">
+    <div data-theme="light" className="w-full h-full min-h-screen text-black">
       <SkipToContent />
       {/* <ThemeToggle /> */}
       <Nav />

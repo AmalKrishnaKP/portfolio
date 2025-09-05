@@ -14,7 +14,7 @@ const Profile = () => {
     >
     <div className="relative flex flex-col px-4 sm:px-8 md:px-15 justify-center min-h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[40rem] z-20">
       <button 
-        className="bg-white text-black px-3 py-2 sm:px-4 sm:py-3 rounded-full absolute top-3 sm:top-5 right-3 sm:right-5 text-xs sm:text-sm hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        className="bg-black border-white text-white px-3 py-2 sm:px-4 sm:py-3 rounded-full absolute top-3 sm:top-5 right-3 sm:right-5 text-xs sm:text-sm hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         aria-label="Download resume"
       >
         <a 

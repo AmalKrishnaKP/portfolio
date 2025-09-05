@@ -100,13 +100,13 @@ export const AnimatedTestimonials = ({
               duration: 0.2,
               ease: "easeInOut",
             }}>
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            <h3 className="text-2xl font-bold text-black">
               {testimonials[active].title}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
+            <motion.p className="mt-8 text-lg text-gray-800 dark:text-neutral-800">
               {testimonials[active].discription.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -136,13 +136,13 @@ export const AnimatedTestimonials = ({
             {
               testimonials[active].github &&
               <a href={testimonials[active].github}>
-                <button className="p-2 border-2 rounded-2xl cursor-pointer px-3 mr-5"><h1>GitHub</h1></button>
+                <button className="p-2 border-1 rounded-2xl cursor-pointer px-3 mr-5 border-black shadow-3xl"><h1>GitHub</h1></button>
               </a>
             }
             {
               testimonials[active].diploy &&
               <a href={testimonials[active].diploy}>
-                <button className="p-2 border-2 rounded-2xl cursor-pointer px-5"><h1>Live</h1></button>
+                <button className="p-2 border-1 rounded-2xl cursor-pointer px-5  border-black shadow-3xl"><h1>Live</h1></button>
               </a>
             }
               
