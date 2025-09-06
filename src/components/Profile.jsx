@@ -13,20 +13,20 @@ const Profile = () => {
       aria-labelledby="profile-heading"
     >
     <div className="relative flex flex-col px-4 sm:px-8 md:px-15 justify-center min-h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[40rem] z-20">
-      <button 
-        className="bg-black border-white text-white px-3 py-2 sm:px-4 sm:py-3 rounded-full absolute top-3 sm:top-5 right-3 sm:right-5 text-xs sm:text-sm hover:bg-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-        aria-label="Download resume"
+      <a 
+        href="https://drive.google.com/file/d/1EcuW8qMuzgSNs7GKa41UMLr2q1vk5wOU/view?usp=sharing" 
+        className="flex flex-row items-center gap-1 sm:gap-2"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <a 
-          href="https://drive.google.com/drive/folders/1Qoc0AYX9Chm69FKPvNf3B-A7euOEumod" 
-          className="flex flex-row items-center gap-1 sm:gap-2"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button 
+          className="flex flex-row items-center gap-1 sm:gap-2 bg-white border-black   hover:bg-gray-500 hover:text-white  text-black shadow-xl px-3 py-2 sm:px-4 sm:py-3 rounded-full absolute top-3 sm:top-5 right-3 sm:right-5 text-xs sm:text-sm  transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 after:None"
+          aria-label="Download resume"
         >
           <Download className="w-3 h-3 sm:w-4 sm:h-4" aria-hidden="true"/>
           <span>Resume</span>
-        </a>
-      </button>
+        </button>
+      </a>
       <div className='flex flex-col items-center text-center'>
         <div className="h-32 w-32 sm:h-40 sm:w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 mb-6 sm:mb-8 md:mb-10">
           <div className="relative w-full h-full">
